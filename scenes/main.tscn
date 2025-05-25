@@ -12,7 +12,7 @@ offset_top = 38.0
 offset_right = 6.0
 offset_bottom = 57.0
 
-[node name="Node" type="Node" parent="cat"]
-
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(6, 6)
+zoom = Vector2(4, 4)
+
+[connection signal="pressed" from="cat" to="." method="_on_cat_pressed"]

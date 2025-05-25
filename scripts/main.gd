@@ -14,3 +14,8 @@ func _process(_delta):
 	
 func _input(_event):
 	pass
+
+
+func _on_cat_pressed():
+	$cat.add_body()
+	pass # Replace with function body.
