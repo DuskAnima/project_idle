@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://dsy0mtk123t1h"]
+[gd_scene load_steps=5 format=3 uid="uid://dsy0mtk123t1h"]
 
 [ext_resource type="Script" uid="uid://b3v31lbv06qus" path="res://scripts/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://cloy6ys8anpv5" path="res://scenes/cat.tscn" id="1_o5qli"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_0wfyh"]
+device = -1
+keycode = 32
+unicode = 32
+
+[sub_resource type="Shortcut" id="Shortcut_sugp2"]
+events = [SubResource("InputEventKey_0wfyh")]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0wfyh")
@@ -11,6 +19,7 @@ offset_left = -6.0
 offset_top = 38.0
 offset_right = 6.0
 offset_bottom = 57.0
+shortcut = SubResource("Shortcut_sugp2")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
